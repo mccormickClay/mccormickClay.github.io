@@ -1,39 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link href="button.css" rel="stylesheet" type="text/css">
+<link href="sidebarStyle.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {
-    font-family: "Lato", sans-serif;
-}
-
-.sidenav {
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #ADD8E6;
-    overflow-x: hidden;
-    padding-top: 20px;
-}
-
-.sidenav a {
-    padding: 6px 6px 6px 32px;
-    text-decoration: none;
-    font-size: 22px;
-    color: #111111;
-    display: block;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.main {
-    margin-left: 200px; /* Same as the width of the sidenav */
-}
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -44,11 +15,16 @@ body {
 <body>
 
 <div class="sidenav">
-  <a href="index.html">Home</a>
-  <a href="blogs.html">Blogs</a> <br>
-  <a href="personal.html">Personal Projects</a>
-  <a href="teams.html">Team Projects</a>
-  <a href="contact.html">Contact</a>
+	<button class = "button button1" onclick = "window.location.href='index.html'">
+		Home</button>
+	<button class = "button button1" onclick = "window.location.href='blogs.html'">
+		Blogs</button>
+	<button class = "button button1" onclick = "window.location.href='personal.html'">
+		Personal Projects</button>
+	<button class = "button button1" onclick = "window.location.href='teams.html'">
+		Team Projects</button>
+	<button class = "button button1" onclick = "window.location.href='contact.html'">
+		Contact</button>
 </div>
 
 <div class="main">

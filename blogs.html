@@ -1,76 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link href="button.css" rel="stylesheet" type="text/css">
+<link href="blogstyle.css" rel="stylesheet" type="text/css">
+<link href="sidebarStyle.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
-		body {
-			font-family: "Lato", sans-serif;
-			background-color: #e0e0e0;
-		}
-
-		.sidenav {
-			height: 100%;
-			width: 200px;
-			position: fixed;
-			z-index: 1;
-			top: 0;
-			left: 0;
-			background-color: #ADD8E6;
-			overflow-x: hidden;
-			padding-top: 20px;
-		}
-
-		.sidenav a {
-			padding: 6px 6px 6px 32px;
-			text-decoration: none;
-			font-size: 16px;
-			color: #111111;
-			display: block;
-		}
-
-		.sidenav a:hover {
-			color: #f1f1f1;
-		}
-		
-		.blogHeader1 {
-			background-color: #ADD8E6;
-		}
-		
-		.card-container1 {
-			background-color: #ffffff;
-		}
-		
-		.button{
-			background-color: #ADD8E6; /* Green */
-			border: none;
-			color: #000000;
-			padding: 16px 32px;
-			text-align: center;
-			text-decoration: none;
-			display: inline-block;
-			font-size: 16px;
-			margin: 4px 2px;
-			-webkit-transition-duration: 0.4s; /* Specifically for Safari */
-			transition-duration: 0.4s;
-			cursor: pointer;
-			border-radius: 15px;
-		}
-		
-		.button1{
-		    background-color: #ADD8E6; /*color or the side bar*/
-			color: #551a8b; 
-			border: 2px solid #551a8b;
-		}
-		
-		.button1:hover {
-			background-color: #551a8b;
-			color: #ffffff;
-			border: 2px solid #551a8b;
-		}
-		
-		.main {
-			margin-left: 200px; /* Same as the width of the sidenav */
-		}
 
 		@media screen and (max-height: 450px) {
 		  .sidenav {padding-top: 15px;}
@@ -82,13 +17,16 @@
 <body>
 
 <div class="sidenav">
-<button class = "button button1">
-	Home</button>
-  <a href="index.html">Home</a>
-  <a href="blogs.html">Blogs</a>
-  <a href="personal.html">Personal Projects</a>
-  <a href="teams.html">Team Projects</a>
-  <a href="contact.html">Contact</a>
+	<button class = "button button1" onclick = "window.location.href='index.html'">
+		Home</button>
+	<button class = "button button1" onclick = "window.location.href='blogs.html'">
+		Blogs</button>
+	<button class = "button button1" onclick = "window.location.href='personal.html'">
+		Personal Projects</button>
+	<button class = "button button1" onclick = "window.location.href='teams.html'">
+		Team Projects</button>
+	<button class = "button button1" onclick = "window.location.href='contact.html'">
+		Contact</button>
 </div>
 
 
@@ -98,19 +36,17 @@
   
   
   <div class="cards">
-  
-	<div class = "card-container1">
-	    <header class="blogHeader1">
+  	    <header class="blogHeader1">
 			<h2>TITLE HEADING</h2>
 		</header>
+	<div class = "card-container1">
 	  <h5>Title description, Dec 7, 2017</h5>
       <p>Some text..</p>
 	</div>
-	
-	<div class = "card-container1">
-	    <header class="blogHeader1">
+		<header class="blogHeader1">
 			<h2>TITLE HEADING</h2>
 		</header>
+	<div class = "card-container1">
 	  <h5>Title description, Dec 7, 2017</h5>
       <p>Some text..</p>
 	</div>
