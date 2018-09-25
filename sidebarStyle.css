@@ -4,18 +4,19 @@ body {
 }
 
 .main {
-	margin-left: 200px; /* Same as the width of the sidenav */
+	margin-left: 250px; 
+    margin-top: 120px; /* little larger than height of the sidenav */
 }
 
 .sidenav {
-    height: 100%;
-    width: 180px;
+    height: 80px;
+    width: 100%;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: #ADD8E6;
-    overflow-x: hidden;
+    overflow: hidden;
     padding-top: 20px;
 }
 

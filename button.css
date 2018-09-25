@@ -1,16 +1,19 @@
 .button{
 	background-color: #ADD8E6; /* Green */
 	border: none;
-	width: 120px;
+	width: 100px;
 	position: relative;
-	left: 25px;
+	/*left: 25px;*/
 	color: #000000;
-	padding: 16px 32px;
+	padding: 16px 16px;
 	text-align: center;
+    vertical-align: middle;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 16px;
-	margin: 10px 2px;
+	font-size: 14px;
+	/*margin: 2px 2px;*/
+    margin-left: auto;
+    margin-right: auto;
 	-webkit-transition-duration: 0.4s; /* Specifically for Safari */
 	transition-duration: 0.4s;
 	cursor: pointer;
