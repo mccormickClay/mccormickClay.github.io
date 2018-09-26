@@ -4,8 +4,11 @@ body {
 }
 
 .main {
-	margin-left: 250px; 
-    margin-top: 120px; /* little larger than height of the sidenav */
+	/*margin-left: 250px; 
+    margin-top: 120px;*/ /* little larger than height of the sidenav */
+    max-width: 500px;
+    margin: auto;
+    margin-top: 120px;
 }
 
 .sidenav {
@@ -15,6 +18,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
+    margin: auto;
     background-color: #ADD8E6;
     overflow: hidden;
     padding-top: 20px;
