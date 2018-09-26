@@ -14,6 +14,7 @@
 	font-size: 14px;
     margin-left: 10px;
     margin-right: 10px;
+    -moz-transition-duration: 0.4s;
 	-webkit-transition-duration: 0.4s; /* Specifically for Safari */
 	transition-duration: 0.4s;
 	cursor: pointer;
