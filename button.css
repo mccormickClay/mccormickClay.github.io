@@ -1,15 +1,16 @@
+@import url("sidebarStyle.css");
+
 .button{
-	background-color: #ADD8E6; /* Green */
+	/*background-color: #ADD8E6;*/ /* Green */
 	border: none;
 	width: 100px;
 	position: relative;
-	left: 40%;
+	left: 10%;
 	color: #000000;
 	padding: 16px 16px;
 	text-align: center;
     vertical-align: middle;
 	text-decoration: none;
-	display: inline-block;
 	font-size: 14px;
     margin-left: 10px;
     margin-right: 10px;
@@ -20,13 +21,15 @@
 }
 		
 .button1{
-    background-color: #ADD8E6; /*color or the side bar*/
-	color: #551a8b; 
-	border: 2px solid #551a8b;
+    /*background-color: #ADD8E6;*/ /*color or the side bar*/
+    background-color: var(--sidebarColor);
+	color: var(--templateColor1); 
+	border: 2px solid var(--templateColor1);
+    /*551a8b*/
 }
 
 .button1:hover {
-	background-color: #551a8b;
-	color: #ffffff;
-	border: 2px solid #551a8b;
+	background-color: var(--templateColor1);
+	color: var(--sidebarColor);
+	border: 2px solid var(--templateColor1);
 }

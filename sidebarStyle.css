@@ -1,27 +1,46 @@
+:root{
+    --background: #e0e0e0;
+    --sidebarColor: #000000;
+    --templateColor1: #ffffff;
+}
+
 body {
 	font-family: "Lato", sans-serif;
-	background-color: #e0e0e0;
+	background-color: var(--background);
 }
+
 
 .main {
 	/*margin-left: 250px; 
     margin-top: 120px;*/ /* little larger than height of the sidenav */
-    max-width: 500px;
+    max-width: 845px;
     margin: auto;
-    margin-top: 120px;
+    margin-top: 7%;
+}
+
+.contentBox{
+    max-width: 845px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 170px;
+    width: 800px;
+    background: white;
+    padding: 10px;
 }
 
 .sidenav {
-    height: 80px;
+    height: 60px;
     width: 100%;
     position: fixed;
     z-index: 1;
-    top: 0;
+    top: 10%;
     left: 0;
     margin: auto;
-    background-color: #ADD8E6;
+    /*background-color: var(--background);*/
     overflow: hidden;
-    padding-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .sidenav a {
@@ -29,9 +48,22 @@ body {
     text-decoration: none;
     font-size: 22px;
     color: #111111;
-    display: block;
 }
 
 .sidenav a:hover {
     color: #f1f1f1;
+}
+
+.sidenavBar{
+    height: 95px;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    top: 10%;
+    left: 0;
+    margin: auto;
+    background-color: var(--sidebarColor);
+    overflow: hidden;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
