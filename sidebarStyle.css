@@ -23,14 +23,14 @@ body {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    top: 170px;
-    width: 800px;
+    top: 18%; /*170px;*/
+    width: 40%;
     background: white;
     padding: 10px;
 }
 
 .sidenav {
-    height: 60px;
+    height: 10%;
     width: 100%;
     position: fixed;
     z-index: 1;
@@ -55,7 +55,7 @@ body {
 }
 
 .sidenavBar{
-    height: 95px;
+    height: 10%; /*95px*/
     width: 100%;
     position: fixed;
     z-index: -1;

@@ -1,8 +1,9 @@
 .name-title{
-    max-width: 845px;
-    top: 75px;
+    /*max-width: 845px;*/
+    top: 8%;
+    left: 44%;
     margin: auto;
-	position: relative;
+	position: absolute;
 	color: #ffffff;
 	text-align: center;
     vertical-align: middle;

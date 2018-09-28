@@ -3,7 +3,7 @@
 .button{
 	/*background-color: #ADD8E6;*/ /* Green */
 	border: none;
-	width: 100px;
+	width: 5%; /*100px*/
 	position: relative;
 	left: 10%;
 	color: #000000;
