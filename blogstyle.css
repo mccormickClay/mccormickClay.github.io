@@ -5,10 +5,10 @@
 	background-color: #ADD8E6;
 	border-radius: 8px;
 	position: relative;
-	text-indent: 20px; 
-	left: -20px;
+	text-indent: 40px; 
+	left: -40px;
 	top: -10px;
-	width: 106%; /*845px;*/
+	width: 108%; /*845px;*/
 	color: #ffffff;
 }
 
@@ -21,5 +21,9 @@
 	top: -30px;
 	left: -10px;
 	padding: 10px 10px 5px 10px;
+}
+
+p.indent{
+	padding-left: 1.8em
 }
 		

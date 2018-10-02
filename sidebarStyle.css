@@ -23,12 +23,12 @@ body {
     position: absolute;
    /* margin-left: auto;*/
     /*margin-right: auto;*/
-    top: 18%; /*170px;*/
+    top: 20%; /*170px;*/
     left: 50%;
     margin-left: -500px;
     width: 1000px;
     background: white;
-    padding: 10px;
+    padding: 30px;
 }
 
 .sidenav {
