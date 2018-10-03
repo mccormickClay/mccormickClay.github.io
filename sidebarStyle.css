@@ -34,7 +34,7 @@ body {
 .sidenav {
     height: 10%;
     width: 100%;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     top: 10%;
     left: 0;
@@ -59,7 +59,7 @@ body {
 .sidenavBar{
     height: 10%; /*95px*/
     width: 100%;
-    position: fixed;
+    position: absolute;
     z-index: -1;
     top: 10%;
     left: 0;
