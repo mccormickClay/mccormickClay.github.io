@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link href="../resources/css/button.css" rel="stylesheet" type="text/css">
+        <link href="../resources/css/blogstyle.css" rel="stylesheet" type="text/css">
+        <link href="../resources/css/sidebarStyle.css" rel="stylesheet" type="text/css">
+        <link href="../resources/css/name.css" rel="stylesheet" type="text/css">
+<title> Blog | Clay McCormick</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+
+		@media screen and (max-height: 450px) {
+		  .sidenav {padding-top: 15px;}
+		  .sidenav a {font-size: 16px;}
+		}
+
+	</style>
+</head>
+<body>
+    
+<div class="sidenav">
+	<button class = "button button1" onclick = "window.location.href='../index.html'">
+		Home</button>
+	<button class = "button button1" onclick = "window.location.href='../blogs.html'">
+		Blogs</button>
+	<button class = "button button1" onclick = "window.location.href='../projects.html'">
+		Projects</button>
+	<button class = "button button1" onclick = "window.location.href='../contact.html'">
+		About Me</button>
+</div>
+
+<div class="sidenavBar">
+</div>
+    
+<div class="name-title">
+    <h2> Clay McCormick</h2>
+</div>
+
+<div class="main">
+    <div class="contentBox">
+  <h2> Interacting with different Unity Collisions </h2>
+  
+  <div class="cards">
+  	    <header class="blogHeader1">
+			<h2>PROJECT LANTERN, Jan 20, 2018</h2>
+		</header>
+	<div class = "card-container1">
+	<p>
+    Inside Project Lantern the player is allowed to interact with
+    specific objects within the game. These objects interact in Unity
+    by Trigger Colliders. The interactions would be simple, the ability
+    to pick up torches and melting ice with it.
+	</p>
+      
+    <p> The first run through was adding an if for the first couple interactable objects.
+            I was able to prototype the functions working as they were supposed to. The player held 
+            two GameObjects always that changed based on the Trigger the player was entering.
+            They were specifically for what the player was holding and colliding with. My reasoning
+            was to allow the player the choice to interact with the object whenever they were in
+            the trigger area and know what object they were colliding with. Depending if the player
+            had a torch or not, was where all the ifs came in.</p>
+      
+    <script src="https://gist.github.com/mccormickClay/9e026065447a49d729ef5173f8c24565.js"></script>
+      
+    <p>As we went through the design process it became clear that there would be more than a couple
+    of interactable objects. I was going to have to redo the system to make this easier for myself
+    and for future implementations. I wanted to avoid as many ifs as possible. With my current system, I use
+    one if, and that is only inside specific objects made by the Designers in Scene Mode. With the due date 
+    coming near, I need to make sure I have everything working for the designers even if there an if I’d rather remove.
+    </p>
+
+    <p>I ended up creating two base objects. One inherited MonoBehavior and the other does not.
+    InteractableObjectBase was created so that the designers would have choices for their objects if needed in SceneMode 
+    in something they are comfortable with. InteractableCommandBase is the abstract base class derived from Component for anything 
+    that will interact with one another. Inside the command base, i create abstract functions for Interact(), Accept() and Visit(). 
+    The visitor pattern is used to allow the interactable objects knowledge of what they are talking to starting from 
+    the CommandBase. With the player’s CommandBase (either a torch or null command), they can interact with any GameObject 
+    that has a trigger, retrieve its base. I created a public static class that when knowing both derived classed will tell 
+    the first object to interact with the other.
+    </p>
+    <script src="https://gist.github.com/mccormickClay/aa88c6ea50c01c98ec30976bc207ab7b.js"></script>
+    
+    <p>The downside to this process is that each trigger that the player interacts with needs to have this command. However, having 
+    the null command can fix this problem easily. This also cancels the need to have ifs or the player to hold multiple GameObjects. 
+    Now it only holds two commands (held and colliding command).
+    </p>
+
+    <p>Even with the overhead of needing functions for every interaction, it allows a lot of customization that was not possible before. 
+    A very basic example is the ability not to grab multiple torches or drop a torch when you are already colliding with one. Adding 
+    colliding objects with independent code is simple and allows specific interactions with each object (blessing and a curse). 
+    Hopefully, this will be put to the test and I can see how to slowly improve on it.
+    </p>
+	</div>
+	
+  </div> 
+  </div>
+ </div>
+     
+</body>
+</html> 
